@@ -13,7 +13,8 @@ pipeline {
     }
     stage('deploy') {
       steps {
-         sh 'ssh 192.168.56.105 touch /home/joeaxberg/testfile' 
+         sh 'zip -r microblog.zip micrblog'
+         sh 'scp microblog.zip 192.168.56.105:.' 
       } 
     }
   }

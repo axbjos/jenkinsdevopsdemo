@@ -14,7 +14,7 @@ pipeline {
     stage('deploy') {
       steps {
          sh 'pwd'
-         sh 'zip -r microblog.zip . -i microblog'
+         sh 'zip -r microblog.zip . -i microblogpy'
          sh 'scp microblog.zip 192.168.56.105:.' 
       } 
     }

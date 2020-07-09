@@ -13,7 +13,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-         sh 'zip -r microblog.zip micrblog'
+         sh 'zip -r microblog.zip microblog'
          sh 'scp microblog.zip 192.168.56.105:.' 
       } 
     }

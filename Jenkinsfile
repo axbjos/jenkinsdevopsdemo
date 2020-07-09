@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'python3 test.py'
+        sh '/Users/joeaxberg/Documents/Jenkins/microblog/venv/bin/python3 test.py'
       }   
     }
   }
